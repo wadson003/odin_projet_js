@@ -1,4 +1,6 @@
 console.log("Hello World");
+
+
 function getComptuterChoice(){
 
     let randomValue = Math.random();
@@ -19,7 +21,8 @@ function getHumanChoice(){
     return choice;
 }
 
-console.log ("le choix est:",getHumanChoice());
+let humanChoice = getHumanChoice();
+let computerChoice = getComptuterChoice();
 
 let humanScore =0;
 let computerScore =0;
@@ -27,6 +30,7 @@ let computerScore =0;
 function playRound(humanChoice, computerChoice){
 
     humanChoice = humanChoice.toLowerCase();
+    computerChoice = computerChoice.toLowerCase();
 
 if (humanChoice === computerChoice){
     console.log("Egalite entre les camps" + humanChoice);
